@@ -13,3 +13,21 @@ services:
     environment:
       - JUPYTER_TOKEN=dlinano
     command: jupyter lab --no-browser --ip=0.0.0.0 --port=1234 --allow-root
+    networks:
+      - dev-network
+
+  ollama:
+    build: ./ollama
+    restart: always
+    container_name: ollama
+    ports:
+      - "11434:11434" # Default port for Ollama
+    volumes:
+      - ./ollama_data:/data # Optional: Mount a volume for persistent data
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    name: dev-network
+    driver: bridge

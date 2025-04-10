@@ -8,3 +8,4 @@ seaborn
 matplotlib
 langchain-ollama
 streamlit
+langchain_core
