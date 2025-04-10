@@ -9,3 +9,5 @@ matplotlib
 langchain-ollama
 streamlit
 langchain_core
+faiss-cpu
+chromadb

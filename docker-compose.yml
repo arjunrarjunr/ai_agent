@@ -1,5 +1,3 @@
-version: '2'
-
 services:
   python:
     build: ./python
@@ -23,7 +21,7 @@ services:
     ports:
       - "11434:11434" # Default port for Ollama
     volumes:
-      - ./ollama_data:/data # Optional: Mount a volume for persistent data
+      - ./ollama_model:/root/.ollama
     networks:
       - dev-network
 

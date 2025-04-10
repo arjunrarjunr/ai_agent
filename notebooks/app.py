@@ -14,7 +14,7 @@ prompt = ChatPromptTemplate.from_messages([
     ("user", "{input}"),
 ])  
 
-llm = OllamaLLM(model="llama2", temperature=0.5, base_url="http://ollama:11434")
+llm = OllamaLLM(model="llama3.2", temperature=0.5, base_url="http://ollama:11434")
 
 output_parser = StrOutputParser()
 
