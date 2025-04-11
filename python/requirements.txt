@@ -6,5 +6,9 @@ sqlalchemy
 mysql-connector-python
 seaborn
 matplotlib
-langchain-ollama
 streamlit
+langchain-community
+langchain_core
+langchain-ollama
+langchain
+langchain-chroma
